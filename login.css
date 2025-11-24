@@ -1,0 +1,23 @@
+body{
+
+    display:flex;
+    justify-content:right;
+    align-items:right;
+    min-height:100px;
+    background-color: #55A3EC;
+    font-size:10px;
+   
+   }  
+   form{
+    background-color:#FFFF;
+    padding:20px;
+    border-radius: 10px;
+    width:300px;
+   }
+    body::before{content:"";
+    display:block;
+    white-space:pre-wrap;
+    line-height: 25px;
+    opacity: 0.15;
+    background-repeat:repeat;
+}
