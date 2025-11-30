@@ -3,41 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="login.css"> <!--To link css file with this file-->
-    
+    <title>Login</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div class="left-panel">
-    <h3 class="welcome">Welcome Back!!</h3>
-    <div class="container">
-         <!--serves as main wrapper-->
-         <img src="https://i.ibb.co/JjZSjr3P/petpal-high-resolution-logo-removebg-preview-2.png">
-         </div>
-         </div>
+<div class="left-panel"> 
+    <h1 class="welcome">Welcome to PetPal</h1>
+    <img src="https://i.ibb.co/JjZSjr3P/petpal-high-resolution-logo-removebg-preview-2.png" alt="PetPal logo" class="logo">
+    </div>
     <div class="right-panel">
-        <div class="containerbox">
-            <div class="usericon">
-                <img src="https://i.ibb.co/nqgqqNV7/io-removebg-preview.png" class="logo-img">
-            </div>
-            <h2 class="login-title">LOGIN</h2>
-     <form action="">
-        
-        <br>
-        <input type="username" name="username" placeholder="username" required>
-        <br>
-        <br>
-        <br>
-        <input type="password" name="password" placeholder="password" required>
-        <br>
+        <div class="container-box">
+            <h3 class="title">Login</h3>
+    <form>
+        <div class="input">
+            <h5>Username :</h5>
+            <input type="text" class="custom-input" placeholder=" Enter Username" required>
+        </div>
+         <div class="input">
+            <h5>Password :</h5>
+            <input type="password" class="custom-input" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="submit-button">Login</button>
         <br>
         <br>
-        <input id="btn" type="button" value="login">
-        <p>Don't have an account<a href="#"><br>Sign up now</a></p>
-        <p class="or">OR</p>
-        <p class="socials"><a href="#">Sign in via Google/instagram or facebook</a></p>
-     </form>
-    </div>
-    </div>
+        <a href="#" class="footer-link">Don't have an account? Sign up now</a>
+        <p><a href="#" >Forgot Password?</a></p>
+    </form>
+     </div>
+     </div>
 </body>
 </html>
