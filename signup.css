@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins',sans-serif;
     height: 300px;
     width: 300px;
+    margin: 0;
     display: flex;
     overflow: hidden;
 }
@@ -28,7 +29,7 @@ body::before{
     z-index: index 10;
     text-align: center;
     color:#0056b3;
-    margin-top: 80px;
+    margin-top: 250px;
     margin-bottom:40px;
     margin-left: 150px;
     white-space: nowrap;
@@ -44,8 +45,7 @@ body::before{
 
 .container-box{
   align-content: center;
-  margin-left: 300px;
-  margin-top: 300px;
+  
    background-color:white;
    width:300px;
    height:900px
@@ -53,11 +53,12 @@ body::before{
    padding: 50px 30px;
    text-align: center;
    border-radius: 8px;
+   margin: 0;
    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .left-panel{
-  flex:1.5;
+  flex:2;
   position: relative;
   display:flex;
   flex-direction: column;
@@ -67,11 +68,35 @@ body::before{
   background-position: cover;
 }
 
+.logo{
+     width:200px;
+     height: 200px;
+     margin-left:100px;
+     border:6px solid #ffffff;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+     transition: all 0.3s ease-in-out;
+     margin-top: 100px;
+     border-radius: 50%;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+
 .right-panel{
     flex: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:500px;
+    height:700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0,168,255,0.75);
+    min-height:100px;
 }
 
 .custom-input {
@@ -96,3 +121,6 @@ body::before{
     border: none;
 
    }
+  .submit-button:hover{
+    background-color: #008ecc;
+  }
