@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetPal - Products</title>
     <style>
-        /* --- 1. GENERAL STYLES --- */
+       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Your paw print background */
+            background-image: url('background.jpg'); 
             background-size: cover;
-            background-attachment: fixed; /* Keeps background still while scrolling */
+            background-attachment: fixed; 
         }
 
-        /* --- 2. HEADER (Same as your other pages) --- */
         header {
-            background-color: #5ca0ee; /* PetPal Blue */
-            display: flex; /* Aligns Logo left, Nav right */
+            background-color: #5ca0ee; 
+            display: flex; 
             justify-content: space-between;
             align-items: center;
             padding: 10px 40px;
@@ -27,12 +26,12 @@
 
         .logo {
             height: 70px;
-            background-color: #FFE135; /* Yellow circle background */
+            background-color: #FFE135; 
             border-radius: 50%;
         }
 
         nav a {
-            color: #FFE135; /* Yellow text */
+            color: #FFE135; 
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
@@ -44,7 +43,7 @@
             text-decoration: underline;
         }
 
-        /* Search and Icons container */
+      
         .header-right {
             display: flex;
             align-items: center;
@@ -57,13 +56,7 @@
             border: none;
         }
 
-        .nav-icon {
-            height: 30px;
-            cursor: pointer;
-            filter: invert(1); /* Makes black icons white. Remove if yours are white. */
-        }
 
-        /* --- 3. PAGE TITLE & SORT BAR --- */
         .page-header {
             text-align: center;
             margin-top: 30px;
@@ -73,14 +66,14 @@
             color: #FFE135;
             font-size: 48px;
             margin-bottom: 10px;
-            text-shadow: 2px 2px #00000033; /* Slight shadow for readability */
+            text-shadow: 2px 2px #00000033; 
         }
 
         .controls {
             display: flex;
-            justify-content: flex-end; /* Pushes buttons to the right */
+            justify-content: flex-end; 
             max-width: 1200px;
-            margin: 0 auto 20px auto; /* Centers the bar, adds bottom space */
+            margin: 0 auto 20px auto; 
             padding-right: 20px;
         }
 
@@ -94,35 +87,34 @@
             border-radius: 5px;
         }
 
-        /* --- 4. PRODUCT GRID (The Magic Part) --- */
-        .product-grid {
-            display: grid; /* Creates a grid layout automatically */
-            /* This line creates columns that are at least 250px wide */
+       
+        .product-list {
+            display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 30px; /* Space between cards */
+            gap: 30px; 
             max-width: 1200px;
-            margin: 0 auto 50px auto; /* Center the grid on page */
+            margin: 0 auto 50px auto; 
             padding: 20px;
         }
 
-        /* --- 5. INDIVIDUAL PRODUCT CARD --- */
+  
         .card {
             background-color: #5ca0ee;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.2s; /* Smooth hover animation */
+            transition: transform 0.2s; 
         }
 
         .card:hover {
-            transform: translateY(-5px); /* Moves up slightly when hovered */
+            transform: translateY(-5px); 
         }
 
         .card-img {
-            width: 100%; /* Image fills the card width */
-            height: 200px; /* Fixed height so all boxes match */
-            object-fit: cover; /* Crops image neatly if it's too big */
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
             background-color: white;
             border-radius: 5px;
             margin-bottom: 15px;
@@ -183,87 +175,74 @@
 </head>
 <body>
 
-    <!-- HEADER -->
     <header>
-        <img src="petpal-high-resolution-logo.png" alt="Logo" class="logo">
+        <img src="petpal-high-resolution-logo.png" style="width: 10%;">
+        
         <nav>
             <a href="#">Home</a>
             <a href="#">Products</a>
             <a href="#">Tracker</a>
             <a href="#">About Us</a>
         </nav>
-        <div class="header-right">
-            <input type="text" class="search-input" placeholder="Search...">
-            <img src="profile-icon.png" class="nav-icon">
-            <img src="cart-icon.png" class="nav-icon">
+
+        <form ><input type="text" placeholder="Search " style="margin-left: 40%; text-align: center; width: 300px; height: 25 px;"> </form>
+        <div style="position: relative; gap: 5px;">
+            <img src="profile-icon.png" style="width: 5%; margin-left: 45%;">
+            <img src="cart-icon.png" style="width: 5%;  margin-left: 40%;"> 
         </div>
     </header>
 
-    <!-- TITLE SECTION -->
-    <div class="page-header">
+    <div>
         <h1>PRODUCTS</h1>
     </div>
 
-    <!-- SORT/FILTER BUTTONS -->
     <div class="controls">
-        <button class="control-btn">⇅ Sort</button>
-        <button class="control-btn">▼ Filter</button>
+        <button class="control-btn"> Sort</button>
+        <button class="control-btn"> Filter</button>
     </div>
 
-    <!-- PRODUCT GRID (8 ITEMS) -->
-    <div class="product-grid">
+    
+    <div class="product-list">
         
-        <!-- Product 1 -->
         <div class="card">
-            <img src="img1.jpg" alt="Treats" class="card-img">
+            <img src="img1.jpg" >
             <h3 class="product-name">Chicken Dog Treats</h3>
             <span class="price">Rs 1100</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 2 -->
         <div class="card">
-            <img src="img2.jpg" alt="Cat Food" class="card-img">
+            <img src="img2.jpg" >
             <h3 class="product-name">Fish-flavored Cat Food</h3>
             <span class="price">Rs 1200</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 3 -->
         <div class="card">
-            <img src="img3.jpg" alt="Dog Meal" class="card-img">
+            <img src="img3.jpg" >
             <h3 class="product-name">High Protein Dog Meal</h3>
             <span class="price">Rs 1200</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 4 -->
         <div class="card">
-            <img src="img4.jpg" alt="Dog Food" class="card-img">
+            <img src="img4.jpg" >
             <h3 class="product-name">High-fiber Dog Food</h3>
             <span class="price">Rs 1500</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 5 -->
         <div class="card">
-            <img src="img5.jpg" alt="Chewy Bone" class="card-img">
+            <img src="img5.jpg" >
             <h3 class="product-name">Long-Lasting Chewy Bone</h3>
             <span class="price">Rs 800</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
 
-        <!-- Product 6 -->
         <div class="card">
-            <img src="img6.jpg" alt="Tuna" class="card-img">
+            <img src="img6.jpg" >
             <h3 class="product-name">Premium Tuna Delight</h3>
             <span class="price">Rs 1300</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 7 -->
         <div class="card">
-            <img src="img7.jpg" alt="Kibble" class="card-img">
+            <img src="img7.png" >
             <h3 class="product-name">Puppy Starter Kibble</h3>
             <span class="price">Rs 1600</span>
             <button class="add-btn">ADD TO CART</button>
@@ -271,7 +250,7 @@
 
         <!-- Product 8 -->
         <div class="card">
-            <img src="img8.jpg" alt="Toys" class="card-img">
+            <img src="img8.png" >
             <h3 class="product-name">Catnip Mouse Toy</h3>
             <span class="price">Rs 450</span>
             <button class="add-btn">ADD TO CART</button>
@@ -279,21 +258,28 @@
 
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div>
-            <h3>PetPal</h3>
+     <footer>
+        <div class="footer">
+            <img src="petpal-high-resolution-logo.png" alt="Logo" class="logo" style="height: 60px;">
             <p>Right Meals for the Right Companion</p>
-        </div>
-        <div>
-            <h3>Help</h3>
-            <p>Shipping & Returns</p>
-            <p>FAQ</p>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p>support@petpal.com</p>
-            <p>+1 234 567 890</p>
+            <p>Follow us: Instagram | Twitter | Facebook</p>
+            <h3>PetPal</h3>
+            <ul>
+                
+                <li>Learn how to create a happy home</li>
+                <li>Healthy home for your little ones</li>
+            </ul>
+            <h3>Links</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Terms of Service</li>
+                <li>Contact Us</li>
+            </ul>
+            <h3>Legal</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Editorial Guidelines</li>
+            </ul>
         </div>
     </footer>
 
