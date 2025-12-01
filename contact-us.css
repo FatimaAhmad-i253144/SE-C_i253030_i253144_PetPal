@@ -1,11 +1,11 @@
 body{
     display:flex;
+    flex-direction: column;
     margin: 0 ;
     padding:0;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    align-items: center;
+    
     background-color: rgb(69, 133, 216);
     border-radius:8px;
     box-shadow: 0 2px 5px rgba(24, 26, 150, 0.1);
@@ -14,16 +14,19 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
    
 }
  .container{
+  flex: 1;
     display : flex;
     align-items: center;
     justify-content: center;
      margin: 50px 20px; 
     padding: 0px;
     width: 100%;
-    
+    box-sizing: border-box;
   }
 
  .form-box{
@@ -76,4 +79,105 @@ p.mail{
     padding:10px;
     margin-bottom:25px;
     
+}
+
+.site-footer{
+background-color: #00AAFF;
+padding: 50px 20px;
+font-family: 'Poppins', sans-serif;
+color:white;
+width:100%;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-col{
+    flex:1;
+    min-width: 200px;
+}
+
+
+
+.brand-col .footer-col img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height:150px;
+    
+}
+
+.brand-name{
+    font-family: 'Dancing Script',cursive;
+    font-size: 1.8rem;
+    color:#FDD835;
+    margin-bottom: 10px;
+}
+
+.quote{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FDD835;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
+    color: #FDD835;
+}
+
+.icons span{
+    font-weight: bold;
+    color:#FDD835;
+}
+
+.icons img{
+    width:30px;
+    height: 27px;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.icons a:hover img{
+  transform: scale(1.2);
+}
+
+.links-col{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 15px;
+}
+
+.link-col a{
+   color: #FDD835;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.link-col a:hover{
+    color:white;
+    text-decoration: underline;
 }
