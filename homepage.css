@@ -108,7 +108,7 @@ h2{
     margin:50px auto;
     margin-top: 50px;
     max-width: 1000px;
-    border-top: 2px dashed rgba(255,255,255,0.3);
+    border-top: 2px dashed rgba(66, 58, 184, 1);
     padding-bottom: 50px;
 
 }
@@ -155,3 +155,5 @@ h2{
     font-size: 0.9rem;
     margin: 0;
  }
+
+ 
