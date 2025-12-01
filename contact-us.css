@@ -1,0 +1,79 @@
+body{
+    display:flex;
+    margin: 0 ;
+    padding:0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 133, 216);
+    border-radius:8px;
+    box-shadow: 0 2px 5px rgba(24, 26, 150, 0.1);
+    background-image: url("https://i.ibb.co/wFdzYv47/background.jpg");
+      background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+ .container{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+     margin: 50px 20px; 
+    padding: 0px;
+    width: 100%;
+    
+  }
+
+ .form-box{
+     padding:10px;
+     border-radius: 6px;
+     width:900px;
+     text-align:left;
+     background-color: rgba(73, 158, 214, 0.85);
+     background-blend-mode: lighten;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+     flex-shrink: 0;
+     color: black;
+  }
+
+p{
+    color:#222;
+    margin-bottom: 20px;
+      margin: 20px auto;
+    word-spacing: 2px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    text-align: left;
+    max-width: 90%;
+}
+ .main{
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color:black;
+    margin: 0 0 20px 0;
+    line-height: 1;
+    text-align: left;
+    padding: 5%;
+}
+
+.advertise{
+  font-family: Arial, sans-serif;
+font-size: 22px;
+font-weight: bold;
+text-align: left;
+margin-top: 30px;
+margin-left: 40px;
+color: black;
+}
+
+p.mail{
+    color:black;
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+    padding:10px;
+    margin-bottom:25px;
+    
+}
