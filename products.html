@@ -30,17 +30,13 @@
             border-radius: 50%;
         }
 
-        nav a {
+        font {
             color: #FFE135; 
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
             margin: 0 15px;
             text-transform: uppercase;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
         }
 
       
@@ -144,32 +140,38 @@
             width: 100%;
             font-weight: bold;
         }
-
-        .add-btn:hover {
-            background-color: #000088;
-        }
-
-        /* --- 6. FOOTER --- */
-        footer {
+        .footer {
             background-color: #5ca0ee;
-            color: white;
+            color: #f8f814;
             padding: 40px;
             display: flex;
             justify-content: space-around;
             border-top: 4px solid #4a8bd6;
+            margin-top: 50px;
+            font-weight: 200 ;
         }
-        
-        /* Mobile Tweak */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 10px;
-            }
-            footer {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
+
+        .footer1 {
+            color: #f8f814;
+        }
+
+        .footer2 {
+            list-style: none; /* Removes bullet points */
+            padding: 0;
+        }
+
+        .footer3 {
+            margin-bottom: 10px;
+        }
+
+        .titleorheading{
+            text-align: center;
+        }
+
+        .headerthings{
+            text-align: center;
+            gap: 10px;
+            color: #f8f814;
         }
     </style>
 </head>
@@ -178,12 +180,12 @@
     <header>
         <img src="petpal-high-resolution-logo.png" style="width: 10%;">
         
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Tracker</a>
-            <a href="#">About Us</a>
-        </nav>
+        <div class="headerthings">
+            <a>Home</a>
+            <a>Products</a>
+            <a>Tracker</a>
+            <a>About Us</a>
+        </div>
 
         <form ><input type="text" placeholder="Search " style="margin-left: 40%; text-align: center; width: 300px; height: 25 px;"> </form>
         <div style="position: relative; gap: 5px;">
@@ -192,8 +194,8 @@
         </div>
     </header>
 
-    <div>
-        <h1>PRODUCTS</h1>
+    <div class="titleorheading">
+        <h1>Products</h1>
     </div>
 
     <div class="controls">
@@ -205,52 +207,50 @@
     <div class="product-list">
         
         <div class="card">
-            <img src="img1.jpg" >
+            <img src="img1.jpg" style="width: 70%;">
             <h3 class="product-name">Chicken Dog Treats</h3>
             <span class="price">Rs 1100</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
         <div class="card">
-            <img src="img2.jpg" >
+            <img src="img2.jpg" style="width: 70%;" >
             <h3 class="product-name">Fish-flavored Cat Food</h3>
             <span class="price">Rs 1200</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
         <div class="card">
-            <img src="img3.jpg" >
+            <img src="img3.jpg" style="width: 70%;">
             <h3 class="product-name">High Protein Dog Meal</h3>
             <span class="price">Rs 1200</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
         <div class="card">
-            <img src="img4.jpg" >
+            <img src="img4.jpg" style="width: 70%;" >
             <h3 class="product-name">High-fiber Dog Food</h3>
             <span class="price">Rs 1500</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
         <div class="card">
-            <img src="img5.jpg" >
+            <img src="img5.jpg" style="width: 70%; ">
             <h3 class="product-name">Long-Lasting Chewy Bone</h3>
             <span class="price">Rs 800</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
 
         <div class="card">
-            <img src="img6.jpg" >
+            <img src="img6.jpg" style="width: 70%;">
             <h3 class="product-name">Premium Tuna Delight</h3>
             <span class="price">Rs 1300</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
         <div class="card">
-            <img src="img7.png" >
+            <img src="img7.png" style="width: 70%;">
             <h3 class="product-name">Puppy Starter Kibble</h3>
             <span class="price">Rs 1600</span>
             <button class="add-btn">ADD TO CART</button>
         </div>
-
-        <!-- Product 8 -->
         <div class="card">
-            <img src="img8.png" >
+            <img src="img8.png" style="width: 70%;" >
             <h3 class="product-name">Catnip Mouse Toy</h3>
             <span class="price">Rs 450</span>
             <button class="add-btn">ADD TO CART</button>
