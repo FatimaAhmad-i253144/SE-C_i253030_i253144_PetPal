@@ -30,22 +30,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #e0f0ff;
-}
 
 /* Main Content Styles */
 main {
